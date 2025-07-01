@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up – AI Video Studio</title>
+  <script src="https://cdn.tailwindcss.com "></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="py-6 px-6 md:px-10 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
+    <h1 class="text-xl font-bold text-indigo-600">AI Video Studio</h1>
+    <a href="/login.html" class="hover:text-indigo-600 transition">Log In</a>
+  </header>
+
+  <!-- Sign Up Form -->
+  <main class="flex items-center justify-center min-h-screen px-4">
+    <div class="max-w-md w-full mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6 text-center">Create Your Account</h2>
+      <p class="text-center text-gray-600 mb-8">Start generating AI videos today — no credit card needed.</p>
+
+      <input type="email" id="email" placeholder="you@example.com" class="w-full p-3 border rounded mb-4" />
+      <input type="password" id="password" placeholder="••••••••" class="w-full p-3 border rounded mb-6" />
+
+      <button onclick="signUp()" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition mb-4">
+        Sign Up
+      </button>
+
+      <p class="text-center text-sm text-gray-600">
+        Already have an account?
+        <a href="/login.html" class="text-indigo-600 underline ml-1">Log In</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 pb-10">
+    &copy; {new Date().getFullYear()} AI Video Studio • All rights reserved
+  </footer>
+</body>
+</html>
